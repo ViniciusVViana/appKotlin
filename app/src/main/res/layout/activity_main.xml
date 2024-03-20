@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:alpha="1">
+
+    <ImageView
+        android:id="@+id/default_ben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:alpha="1"
+        android:src="@drawable/ben_depe"
+        app:layout_constraintStart_toStartOf="@+id/no_ben"
+        app:layout_constraintTop_toTopOf="@+id/no_ben" />
+
+    <Button
+        android:id="@+id/button_benGod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:text="Do you believe GOD?"
+        app:layout_constraintBottom_toTopOf="@+id/button_benHohoho"
+        app:layout_constraintEnd_toStartOf="@+id/button_benBen"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/no_ben"
+        android:layout_width="0dp"
+        android:layout_height="780dp"
+        android:alpha="0"
+        android:src="@drawable/ben_no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_benYes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Are you a dog?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_benHohoho"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_benHohoho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:text="tickle tickle"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_benYes"
+        app:layout_constraintEnd_toStartOf="@+id/button_benYes"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_benBen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your name?"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_benGod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_benGod"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/hohoho_ben"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:src="@drawable/ben_hohoho"
+        app:layout_constraintStart_toStartOf="@+id/no_ben"
+        app:layout_constraintTop_toTopOf="@+id/no_ben" />
+
+    <ImageView
+        android:id="@+id/yes_ben"
+        android:layout_width="578dp"
+        android:layout_height="883dp"
+        android:layout_marginBottom="27dp"
+        android:alpha="0"
+        android:src="@drawable/ben_yes"
+        app:layout_constraintBottom_toBottomOf="@+id/no_ben"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ben_ben"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="30dp"
+        android:alpha="0"
+        android:src="@drawable/ben_ben"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/yes_ben"
+        app:layout_constraintStart_toStartOf="@+id/yes_ben"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
